@@ -23,7 +23,7 @@ export default function Navbar({ cartItems = [], setCart }) {
   return (
     <nav className="p-4 bg-gray-800">
       <div className="container flex items-center justify-between mx-auto">
-        <h1 className="text-xl font-bold text-white">My Store</h1>
+        <h1 className="text-xl font-bold text-white">Click Shop</h1>
         <div className="relative">
           <button onClick={toggleDropdown} className="text-white hover:text-gray-400">
             <ShoppingCartIcon className="w-6 h-6" />
