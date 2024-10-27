@@ -2,20 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* styles/globals.css */
+
+/* สไตล์สำหรับช่องค้นหา */
+.input-search {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  transition: border-color 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.input-search:focus {
+  border-color: #0070f3; /* เปลี่ยนสีเมื่อโฟกัส */
 }
 
+/* สไตล์สำหรับปุ่ม */
+.button {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+/* สไตล์พื้นฐานอื่น ๆ */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif; /* เปลี่ยนฟอนต์พื้นฐาน */
+  line-height: 1.6; /* ความสูงบรรทัด */
+  background-color: #f9f9f9; /* สีพื้นหลัง */
 }
+
+.container {
+  max-width: 1200px; /* กำหนดความกว้างสูงสุด */
+  margin: auto; /* จัดกลาง */
+  padding: 0 20px; /* ระยะห่างด้านข้าง */
+}
+
+
+
